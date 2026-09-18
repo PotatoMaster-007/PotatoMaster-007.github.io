@@ -1,0 +1,22 @@
+{
+  "fichero": {
+    "ficha": [
+      {
+        "nombre": "Antonio",
+        "apellido": "Barbero",
+        "direccion": "Calle de Los Andes, 45"
+      },
+      {
+        "nombre": "Carlos",
+        "apellido": "Rivera",
+        "direccion": "Casa, La",
+        "telefono": [
+          "7766-5544",
+          "2525-2525"
+        ],
+        "email": "rp22009@ues.edu.sv",
+        "website": "http://xml.rp22009.tpi"
+      }
+    ]
+  }
+}

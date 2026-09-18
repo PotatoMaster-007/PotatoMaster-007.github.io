@@ -1,0 +1,26 @@
+{
+  "pais": {
+    "moneda": "Dólar estadounidense",
+    "codigoTelefonico": 503,
+    "idiomas": {
+      "idioma": [
+        "Español",
+        "Náhuat",
+        "Inglés"
+      ]
+    },
+    "areaTerritorial": "21,041",
+    "departamento": [
+      {
+        "cabecera": "San Salvador",
+        "habitantes": "1,700,000",
+        "altura": "545 MSNM"
+      },
+      {
+        "cabecera": "Santa Tecla",
+        "habitantes": "800,000",
+        "altura": "789 MSNM"
+      }
+    ]
+  }
+}

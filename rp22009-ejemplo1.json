@@ -1,0 +1,11 @@
+{
+  "fichero": {
+    "ficha": {
+      "nombre": "Antonio",
+      "apellido": "Barbero",
+      "direccion": "Calle de Los Andes, 45",
+      "_id": "1",
+      "_fechaingreso": "1/11/2012"
+    }
+  }
+}

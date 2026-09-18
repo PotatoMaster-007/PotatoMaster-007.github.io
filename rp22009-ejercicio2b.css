@@ -1,0 +1,68 @@
+/* rp22009-ejercicio2b.css   RP22009  */
+pais {
+    display: block;
+    background-color: #eaf2f8;
+    padding: 25px;
+    border: 3px solid #21a1ac;
+}
+moneda {
+    display: block;
+    color: #1bbb72;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+codigoTelefonico {
+    display: block;
+    color: #111164;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+idiomas {
+    display: block;
+    background-color: #d5f513;
+    border: 1px solid #7bdea0;
+    padding: 10px;
+    margin: 15px 0;
+}
+idioma {
+    display: inline;
+    color: #191f5f;
+    font-size: 16px;
+    margin-right: 15px;
+}
+areaTerritorial {
+    display: block;
+    color: #0a6008;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+departamento {
+    display: block;
+    background-color: white;
+    border: 2px solid #549917;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+}
+cabecera {
+    display: block;
+    color: #15a360;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+habitantes {
+    display: block;
+    color: #2e40d3;
+    font-size: 17px;
+    margin: 5px 0;
+}
+altura {
+    display: block;
+    color: #980c39;
+    font-size: 15px;
+    font-style: italic;
+    margin: 5px 0;
+}

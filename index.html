@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Índice — Sandbox XML / CSS / JSON</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Sandbox XML / CSS / JSON</h1>
+  <p>Estudiante: Carlos Rafael Rivera Pérez - Carnet: RP22009</p>
+  <p class="subtitulo">Listado de ejemplos, ejercicios y sus conversiones</p>
+
+  <section>
+    <h2>Archivos XML y su CSS</h2>
+    <table>
+      <thead>
+        <tr><th>Nombre</th><th>Tipo</th><th>XML</th><th>CSS</th></tr>
+      </thead>
+      <tbody id="tabla-xml"></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Archivos JSON</h2>
+    <ul id="lista-json"></ul>
+  </section>
+
+  <section>
+    <h2>Preguntas y respuestas</h2>
+    <ul class="lista-simple">
+      <li><a href="preguntas-respuestas.xml" target="_blank" rel="noopener">Ver XML</a></li>
+      <li><a href="preguntas-respuestas.css" target="_blank" rel="noopener">Ver CSS</a></li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  // Edita este arreglo con los nombres reales de tus archivos.
+  // Cada ejemplo puede tener varios ejercicios basados en él.
+  const ejemplos = [
+    {
+      nombre: "Ejemplo 1",
+      xml: "rp22009-ejemplo1.xml", css: "rp22009-ejemplo1.css", json: "rp22009-ejemplo1.json",
+      ejercicios: [
+        { nombre: "Ejercicio 1a", xml: "rp22009-ejercicio1a.xml", css: "rp22009-ejercicio1a.css", json: "rp22009-ejercicio1a.json" },
+        { nombre: "Ejercicio 1b", xml: "rp22009-ejercicio1b.xml", css: "rp22009-ejercicio1b.css", json: "rp22009-ejercicio1b.json" },
+      ],
+    },
+    {
+      nombre: "Ejemplo 2",
+      xml: "rp22009-ejemplo2.xml", css: "rp22009-ejemplo2.css", json: "rp22009-ejemplo2.json",
+      ejercicios: [
+        { nombre: "Ejercicio 2a", xml: "rp22009-ejercicio2a.xml", css: "rp22009-ejercicio2a.css", json: "rp22009-ejercicio2a.json" },
+        { nombre: "Ejercicio 2b", xml: "rp22009-ejercicio2b.xml", css: "rp22009-ejercicio2b.css", json: "rp22009-ejercicio2b.json" },
+      ],
+    },
+  ];
+
+  const tbody = document.getElementById("tabla-xml");
+  const listaJson = document.getElementById("lista-json");
+
+  function filaXml(item, tipo) {
+    const fila = document.createElement("tr");
+    fila.className = tipo === "Ejemplo" ? "fila-ejemplo" : "fila-ejercicio";
+    fila.innerHTML = `
+      <td>${item.nombre}</td>
+      <td>${tipo}</td>
+      <td><a href="${item.xml}" target="_blank" rel="noopener">Ver XML</a></td>
+      <td><a href="${item.css}" target="_blank" rel="noopener">Ver CSS</a></td>
+    `;
+    return fila;
+  }
+
+  function itemJson(item, tipo) {
+    const li = document.createElement("li");
+    li.className = tipo === "Ejemplo" ? "item-ejemplo" : "item-ejercicio";
+    li.innerHTML = `<span>${item.nombre}</span><a href="${item.json}" target="_blank" rel="noopener">Ver JSON</a>`;
+    return li;
+  }
+
+  ejemplos.forEach(ej => {
+    tbody.appendChild(filaXml(ej, "Ejemplo"));
+    listaJson.appendChild(itemJson(ej, "Ejemplo"));
+    ej.ejercicios.forEach(ex => {
+      tbody.appendChild(filaXml(ex, "Ejercicio"));
+      listaJson.appendChild(itemJson(ex, "Ejercicio"));
+    });
+  });
+</script>
+</body>
+</html>

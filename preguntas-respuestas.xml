@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="preguntas-respuestas.css"?>
+<!-- preguntas-respuestas.xml -->
+<preguntasyrespuestas>
+  <pregunta>
+    <enunciado>¿A partir del ejemplo 1 y ejercicios desarrollados hasta el momento que puede concluir?</enunciado>
+    <respuesta>Se pueden agregar atributos a los elementos XML para diferenciarlos como es el ejemplo de telefonos que se puede indicar si es de casa o movil y que tambien se puede hacer elementos vacios pero que sus etiquetas le dan utilidad como es el caso de cada "documento"</respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>¿A partir del ejemplo 2 y ejercicios desarrollados hasta el momento que puede concluir?</enunciado>
+    <respuesta>Es algo complicado determinar como ordenar bien las ideas para saber que poner como etiqueta o elemento, junto a como estructurar el diseño de los XML</respuesta>
+  </pregunta>
+  <pregunta>
+    <enunciado>¿A partir de los ejercicios desarrollados en esta sección II.3 que puede concluir?</enunciado>
+    <respuesta>Al convertir XML a JSON, se pierde la información de estructura y anotaciones, pero se mantiene la información de datos, ejemplo seria perder la unidad="MSNM" en altura</respuesta>
+  </pregunta>
+</preguntasyrespuestas>

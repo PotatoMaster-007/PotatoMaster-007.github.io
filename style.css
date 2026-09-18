@@ -1,0 +1,52 @@
+/* style.css   RP22009 - Carlos Rafael Rivera Pérez */
+
+:root {
+  --fg: #1c1c1c;
+  --muted: #6b6b6b;
+  --border: #ddd;
+  --accent: #2b6cb0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2rem 1.5rem;
+  font-family: system-ui, sans-serif;
+  color: var(--fg);
+  line-height: 1.5;
+}
+
+main { max-width: 700px; margin: 0 auto; }
+
+h1 { font-size: 1.2rem; margin: 0 0 0.25rem; }
+.subtitulo { color: var(--muted); font-size: 0.9rem; margin: 0 0 2rem; }
+
+h2 {
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin: 2rem 0 1rem;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th { text-align: left; color: var(--muted); font-weight: 500; font-size: 0.8rem; padding: 0.4rem; }
+td { padding: 0.45rem; border-top: 1px solid var(--border); }
+
+.fila-ejercicio td:first-child { padding-left: 1.5rem; color: var(--muted); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+ul#lista-json { list-style: none; padding: 0; margin: 0; }
+ul#lista-json li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+ul#lista-json li.item-ejercicio span { padding-left: 1.5rem; color: var(--muted); }
+
+.lista-simple { list-style: none; display: flex; gap: 1rem; padding: 0; margin: 0; }

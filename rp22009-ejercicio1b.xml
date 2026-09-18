@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="rp22009-ejercicio1b.css" ?>
+<!-- ejercicio1b.xml  RP22009 - Carlos Rafael Rivera Pérez -->
+
+<fichero>
+    <ficha id="1" fechaingreso="1/11/2012">
+        <nombre>Antonio</nombre>
+        <apellido>Barbero</apellido>
+        <direccion>Calle de Los Andes, 45</direccion>
+    </ficha>
+
+    <ficha id="2" fechaingreso="14/09/2026">
+        <nombre>Carlos</nombre>
+        <apellido>Rivera</apellido>
+        <direccion>Casa, La</direccion>
+        <telefono tipo="movil">7766-5544</telefono>
+        <telefono tipo="casa">2525-2525</telefono>
+        <email>rp22009@ues.edu.sv</email>
+        <website>http://xml.rp22009.tpi</website>
+    </ficha>
+
+    <ficha id="3" fechaingreso="20/11/2012">
+        <nombre>Carlos</nombre>
+        <apellido>Martínez</apellido>
+        <direccion>Calle Principal, 78</direccion>
+        <telefono tipo="movil">7890-1234</telefono>
+        <email>carlos.martinez@example.com</email>
+        <website>https://www.carlosmartinez.example</website>
+
+        <documentacion>
+            <documento tipo="dui" numero="01234567-8" />
+            <documento tipo="isss" numero="123456789" />
+            <documento tipo="afp" numero="987654321" />
+        </documentacion>
+    </ficha>
+</fichero>

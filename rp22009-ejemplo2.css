@@ -1,0 +1,41 @@
+/* rp22009-ejemplo2.css   RP22009 - Carlos Rafael Rivera Pérez */
+pais {
+    background-color: blue;
+}
+departamento {
+    background-color: red;
+    display: block;
+}
+cabecera {
+    color: white;
+    display: inline;
+}
+habitantes {
+    color: yellow;
+    display: inline;
+}
+altura {
+    color: yellow;
+    font-size: 1cm;
+    display: none;
+}
+moneda {
+    color: white;
+    display: block;
+}
+codigoTelefonico {
+    color: yellow;
+    display: block;
+}
+idiomas {
+    background-color: green;
+    display: block;
+}
+idioma {
+    color: white;
+    display: inline;
+}
+areaTerritorial {
+    color: yellow;
+    display: block;
+}

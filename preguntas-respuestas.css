@@ -1,0 +1,37 @@
+/* preguntas-respuestas.css   RP22009 - Carlos Rafael Rivera Pérez */
+preguntasyrespuestas {
+  display: block;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: system-ui, sans-serif;
+  color: #1c1c1c;
+}
+
+pregunta {
+  display: block;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+enunciado {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+enunciado::before {
+  content: "P: ";
+  color: #2b6cb0;
+}
+
+respuesta {
+  display: block;
+  color: #333;
+}
+
+respuesta::before {
+  content: "R: ";
+  color: #6b6b6b;
+  font-weight: 600;
+}

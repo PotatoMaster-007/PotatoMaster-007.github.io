@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="rp22009-ejercicio2a.css" ?>
+<!-- ejercicio2a.xml  RP22009 - Carlos Rafael Rivera Pérez -->
+
+<pais nombre="El Salvador">
+    <moneda codigo="USD">Dólar estadounidense</moneda>
+    <codigoTelefonico>+503</codigoTelefonico>
+
+    <idiomas>
+        <idioma tipo="oficial">Español</idioma>
+        <idioma tipo="autoctono">Náhuat</idioma>
+        <idioma tipo="segundo">Inglés</idioma>
+    </idiomas>
+
+    <areaTerritorial unidad="km2">21,041</areaTerritorial>
+
+    <departamento id="1" nombre="San Salvador">
+        <cabecera>San Salvador</cabecera>
+        <habitantes>1,700,000</habitantes>
+        <altura>545 MSNM</altura>
+    </departamento>
+
+    <departamento id="2" nombre="La Libertad">
+        <cabecera>Santa Tecla</cabecera>
+        <habitantes>800,000</habitantes>
+        <altura>789 MSNM</altura>
+    </departamento>
+</pais>
