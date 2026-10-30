@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad de la configuración OAuth personal utilizada con rclone para acceder a Google Drive.">
+  <meta name="theme-color" content="#101820">
+  <title>Política de privacidad — rclone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="rclone, inicio">
+        <span class="brand-mark" aria-hidden="true">r</span>
+        <span>rclone</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link active" href="privacy.html" aria-current="page">Privacidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="policy-main">
+    <section class="policy-hero">
+      <div class="container policy-hero-inner">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> RCLONE · GOOGLE DRIVE</p>
+        <h1>Política de privacidad</h1>
+        <p>Esta política describe cómo se accede a los datos de Google Drive, cómo se utilizan y dónde se almacenan en esta configuración OAuth de uso exclusivamente personal.</p>
+        <div class="policy-meta">
+          <span>Última actualización: 30 de octubre de 2026</span>
+          <span class="meta-separator" aria-hidden="true">·</span>
+          <span>Uso personal, un único propietario</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container policy-layout">
+      <aside class="policy-aside">
+        <span class="card-label">EN ESTA PÁGINA</span>
+        <nav aria-label="Secciones de la política">
+          <a href="#responsable">Responsable y alcance</a>
+          <a href="#datos">Datos a los que se accede</a>
+          <a href="#uso">Uso de los datos</a>
+          <a href="#almacenamiento">Almacenamiento y seguridad</a>
+          <a href="#comparticion">Compartición y transferencias</a>
+          <a href="#retencion">Conservación y eliminación</a>
+          <a href="#sitio">Este sitio web</a>
+          <a href="#contacto">Contacto y cambios</a>
+        </nav>
+      </aside>
+
+      <article class="policy-content">
+        <section id="responsable" class="policy-section">
+          <span class="policy-index">01</span>
+          <h2>Responsable y alcance de esta política</h2>
+          <p>Esta configuración OAuth, identificada como <strong>rclone</strong> en Google Cloud, es creada y mantenida por una persona para su propio uso. Su finalidad es autorizar la instalación local de <a href="https://rclone.org/" target="_blank" rel="noopener noreferrer">rclone</a> a acceder a la cuenta personal de Google Drive de ese mismo propietario mediante la API de Google Drive.</p>
+          <p>El uso está limitado al propietario. No se ofrece a terceros, no admite registros de otros usuarios y no funciona como un servicio público o una plataforma de almacenamiento. El propietario no opera un servidor propio que reciba o almacene los archivos de Google Drive.</p>
+          <p>rclone es un proyecto de software independiente. Esta configuración OAuth personal no es un producto oficial de Google ni está afiliada al equipo que desarrolla rclone.</p>
+        </section>
+
+        <section id="datos" class="policy-section">
+          <span class="policy-index">02</span>
+          <h2>Datos a los que se accede</h2>
+          <p>El tipo y la cantidad de datos accesibles dependen de los permisos (alcances OAuth) seleccionados en Google Cloud y aceptados por el propietario durante la autorización. En función de esos permisos, rclone puede acceder a:</p>
+          <ul>
+            <li><strong>Datos de autorización:</strong> tokens OAuth de acceso y renovación, su vencimiento y los permisos asociados. Son necesarios para autenticar las solicitudes a Google Drive.</li>
+            <li><strong>Metadatos de archivos:</strong> nombres, identificadores, carpetas, tipo de archivo, tamaño, fechas y otros atributos que la API proporcione y el permiso permita consultar.</li>
+            <li><strong>Contenido de archivos:</strong> contenido que rclone necesite leer o transferir cuando el permiso concedido lo permita, por ejemplo durante una descarga, copia o sincronización.</li>
+          </ul>
+          <p>El alcance <code>drive</code>, utilizado habitualmente por rclone como opción predeterminada, permite acceder a los archivos de Google Drive salvo la carpeta de datos de aplicaciones. Otros alcances, como <code>drive.readonly</code> o <code>drive.file</code>, ofrecen permisos diferentes o más limitados. La configuración real debe corresponder a los alcances declarados en Google Cloud y a los que solicita rclone.</p>
+        </section>
+
+        <section id="uso" class="policy-section">
+          <span class="policy-index">03</span>
+          <h2>Cómo se utilizan los datos</h2>
+          <p>Los datos de Google Drive se utilizan exclusivamente para que el propietario pueda realizar, desde su propio dispositivo, las operaciones que solicita mediante rclone. Estas operaciones pueden incluir listar archivos y carpetas, consultar metadatos, descargar, subir, copiar, sincronizar, mover, renombrar o eliminar elementos, siempre que el alcance autorizado permita la operación.</p>
+          <p>Los datos no se utilizan para publicidad, perfiles de usuario, análisis comerciales ni para desarrollar o entrenar modelos. El propietario no obtiene ingresos ni presta un servicio a terceros mediante esta configuración.</p>
+          <p>La aplicación no solicita datos de Google para finalidades distintas de las necesarias para el funcionamiento de rclone con la cuenta de Drive autorizada.</p>
+        </section>
+
+        <section id="almacenamiento" class="policy-section">
+          <span class="policy-index">04</span>
+          <h2>Almacenamiento y seguridad</h2>
+          <p>rclone se ejecuta localmente en el dispositivo del propietario. Los tokens OAuth y los parámetros de conexión se guardan en el archivo de configuración local de rclone. Los archivos descargados o preparados para subir se almacenan en las ubicaciones locales o remotas que el propietario haya configurado.</p>
+          <p>Esta configuración no transmite los tokens ni el contenido de Drive a un servidor propio del propietario del sitio, porque no existe tal servidor. Las solicitudes de autorización y de datos se envían a los servicios de Google correspondientes para que puedan prestar la función solicitada.</p>
+          <p>El archivo de configuración de rclone debe protegerse como información sensible. rclone permite protegerlo mediante una contraseña de configuración; el propietario también debe mantener protegida su cuenta del sistema operativo, limitar el acceso al dispositivo y evitar compartir el archivo de configuración o las credenciales OAuth.</p>
+        </section>
+
+        <section id="comparticion" class="policy-section">
+          <span class="policy-index">05</span>
+          <h2>Compartición y transferencias</h2>
+          <p>El propietario no vende, alquila ni comparte los datos de Google Drive con terceros para fines propios, publicitarios o comerciales. No hay otros usuarios de esta configuración ni un servicio del propietario que proporcione acceso a esos datos.</p>
+          <p>Para que la integración funcione, las solicitudes de API y los datos necesarios se intercambian con Google. Google procesa esos datos conforme a sus propios términos y políticas de privacidad.</p>
+          <p>rclone también permite copiar o sincronizar archivos hacia otros destinos. Si el propietario configura otro almacenamiento remoto y ejecuta expresamente una operación de ese tipo, los datos seleccionados se transmitirán al destino que haya configurado. Esa transferencia la decide y ejecuta el propietario; no se realiza automáticamente por este sitio web.</p>
+        </section>
+
+        <section id="retencion" class="policy-section">
+          <span class="policy-index">06</span>
+          <h2>Conservación, revocación y eliminación</h2>
+          <p>Los archivos permanecen en Google Drive hasta que el propietario los modifique o elimine. Los tokens de autorización permanecen en el archivo de configuración local mientras el propietario mantenga esa configuración. Los registros, cachés y copias locales que puedan generarse dependen de las opciones y operaciones que el propietario utilice en rclone.</p>
+          <p>El propietario puede retirar el acceso de la aplicación desde la sección de conexiones de su cuenta de Google y puede eliminar la configuración o los tokens locales de rclone. La revocación impide que esta configuración siga utilizando la autorización retirada, aunque no elimina por sí misma los archivos que ya existan en Google Drive ni las copias que el propietario haya guardado en otros destinos.</p>
+          <p><a href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">Administrar las conexiones de tu cuenta de Google ↗</a></p>
+        </section>
+
+        <section id="sitio" class="policy-section">
+          <span class="policy-index">07</span>
+          <h2>Datos tratados por este sitio web</h2>
+          <p>Las páginas de inicio y de privacidad son páginas estáticas e informativas. No incluyen formularios, inicio de sesión, conexión con Google Drive, herramientas de analítica, publicidad ni scripts de seguimiento propios. Este sitio no solicita ni recibe contraseñas, tokens OAuth ni archivos del visitante.</p>
+          <p>El sitio se publica mediante GitHub Pages. GitHub, como proveedor de alojamiento, puede procesar datos técnicos de las solicitudes web conforme a sus propias condiciones y política de privacidad. Ese tratamiento del proveedor de alojamiento es independiente del acceso de rclone a Google Drive.</p>
+          <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">Política de privacidad de GitHub ↗</a></p>
+        </section>
+
+        <section id="contacto" class="policy-section">
+          <span class="policy-index">08</span>
+          <h2>Contacto y cambios de esta política</h2>
+          <p>Esta configuración es mantenida individualmente y no dispone de un servicio de atención al usuario. Para consultas relacionadas con el contenido de este sitio, se puede contactar al propietario mediante su <a href="https://github.com/potatomaster-007" target="_blank" rel="noopener noreferrer">perfil de GitHub</a>.</p>
+          <p>Esta política se actualizará cuando cambie la forma en que la configuración accede, utiliza, almacena o comparte datos de Google. La fecha de la última actualización aparece al comienzo de esta página.</p>
+        </section>
+
+        <div class="policy-endnote">
+          <strong>Resumen:</strong> el propietario utiliza rclone en su propio dispositivo para administrar su propia cuenta de Google Drive. No se presta acceso a terceros ni se opera un servidor propio para recopilar los datos. Los permisos concretos son los que se muestran en la autorización OAuth y se configuran en Google Cloud.
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="footer-brand" href="index.html">rclone<span>.</span></a>
+        <p>Configuración OAuth personal para Google Drive.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Página principal</a>
+        <a href="https://rclone.org/" target="_blank" rel="noopener noreferrer">Proyecto rclone ↗</a>
+      </div>
+      <p class="footer-fine">Última actualización: 30 de octubre de 2026. Esta configuración personal no está afiliada a Google ni representa al equipo del proyecto rclone.</p>
+    </div>
+  </footer>
+</body>
+</html>

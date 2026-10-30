@@ -1,94 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="hjGsg-Y7fbM9pnwWLddr-jOocxKU720xtEqjxsLPez4" />
-<title>Índice — Sandbox XML / CSS / JSON</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información sobre la configuración OAuth personal que permite al propietario usar rclone con su propia cuenta de Google Drive.">
+  <meta name="theme-color" content="#101820">
+  <meta name="google-site-verification" content="hjGsg-Y7fbM9pnwWLddr-jOocxKU720xtEqjxsLPez4" />
+  <title>rclone — conexión personal con Google Drive</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
-  <h1>Sandbox XML / CSS / JSON</h1>
-  <p>Estudiante: Carlos Rafael Rivera Pérez - Carnet: RP22009</p>
-  <p class="subtitulo">Listado de ejemplos, ejercicios y sus conversiones</p>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <section>
-    <h2>Archivos XML y su CSS</h2>
-    <table>
-      <thead>
-        <tr><th>Nombre</th><th>Tipo</th><th>XML</th><th>CSS</th></tr>
-      </thead>
-      <tbody id="tabla-xml"></tbody>
-    </table>
-  </section>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="rclone, inicio">
+        <span class="brand-mark" aria-hidden="true">r</span>
+        <span>rclone</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a class="nav-link active" href="index.html" aria-current="page">Inicio</a>
+        <a class="nav-link" href="privacy.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
 
-  <section>
-    <h2>Archivos JSON</h2>
-    <ul id="lista-json"></ul>
-  </section>
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> CONFIGURACIÓN PERSONAL · GOOGLE DRIVE</p>
+        <h1>rclone<span class="hero-period">.</span></h1>
+        <p class="hero-lead">Conexión OAuth de uso personal para acceder a la cuenta de Google Drive del propietario mediante la herramienta de línea de comandos rclone.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="privacy.html">Leer la política de privacidad <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="https://rclone.org/drive/" target="_blank" rel="noopener noreferrer">Documentación de rclone <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon" aria-hidden="true">i</span>
+          <p>Esta página describe una configuración privada de OAuth. No ofrece almacenamiento, sincronización ni acceso a cuentas para otras personas.</p>
+        </div>
+      </div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+    </section>
 
-  <section>
-    <h2>Preguntas y respuestas</h2>
-    <ul class="lista-simple">
-      <li><a href="preguntas-respuestas.xml" target="_blank" rel="noopener">Ver XML</a></li>
-      <li><a href="preguntas-respuestas.css" target="_blank" rel="noopener">Ver CSS</a></li>
-    </ul>
-  </section>
-</main>
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">01 / IDENTIFICACIÓN</p>
+        <h2>¿Qué es esta aplicación?</h2>
+      </div>
+      <div class="intro-grid">
+        <div class="prose">
+          <p>Esta aplicación corresponde al cliente OAuth creado por el propietario de este sitio en Google Cloud para autorizar su propia instalación local de <strong>rclone</strong> a utilizar la API de Google Drive.</p>
+          <p>El uso está limitado al propietario y a su cuenta personal. No se ofrecen cuentas a terceros, no existe un proceso de registro y el propietario no opera un servicio web que permita a otras personas gestionar sus archivos.</p>
+          <p>rclone es una herramienta de código abierto que se ejecuta en el dispositivo del usuario. Esta configuración utiliza un identificador de cliente OAuth propio para la autorización ante Google.</p>
+        </div>
+        <aside class="info-card">
+          <span class="card-label">USO PREVISTO</span>
+          <strong>Una persona · Una cuenta personal</strong>
+          <p>Acceso a Google Drive desde rclone instalado y ejecutado localmente por su propietario.</p>
+          <div class="card-divider"></div>
+          <span class="card-label">TIPO DE APLICACIÓN</span>
+          <strong>Cliente OAuth para aplicación de escritorio</strong>
+          <p>La autorización se realiza mediante el flujo OAuth de Google utilizado por rclone.</p>
+        </aside>
+      </div>
+    </section>
 
-<script>
-  // Edita este arreglo con los nombres reales de tus archivos.
-  // Cada ejemplo puede tener varios ejercicios basados en él.
-  const ejemplos = [
-    {
-      nombre: "Ejemplo 1",
-      xml: "rp22009-ejemplo1.xml", css: "rp22009-ejemplo1.css", json: "rp22009-ejemplo1.json",
-      ejercicios: [
-        { nombre: "Ejercicio 1a", xml: "rp22009-ejercicio1a.xml", css: "rp22009-ejercicio1a.css", json: "rp22009-ejercicio1a.json" },
-        { nombre: "Ejercicio 1b", xml: "rp22009-ejercicio1b.xml", css: "rp22009-ejercicio1b.css", json: "rp22009-ejercicio1b.json" },
-      ],
-    },
-    {
-      nombre: "Ejemplo 2",
-      xml: "rp22009-ejemplo2.xml", css: "rp22009-ejemplo2.css", json: "rp22009-ejemplo2.json",
-      ejercicios: [
-        { nombre: "Ejercicio 2a", xml: "rp22009-ejercicio2a.xml", css: "rp22009-ejercicio2a.css", json: "rp22009-ejercicio2a.json" },
-        { nombre: "Ejercicio 2b", xml: "rp22009-ejercicio2b.xml", css: "rp22009-ejercicio2b.css", json: "rp22009-ejercicio2b.json" },
-      ],
-    },
-  ];
+    <section class="section section-tint">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / FUNCIONAMIENTO</p>
+          <h2>Cómo se utiliza el acceso</h2>
+          <p class="section-subtitle">rclone se ejecuta en el dispositivo del propietario. Las solicitudes de acceso a archivos se realizan a través de la API de Google Drive.</p>
+        </div>
+        <div class="flow" aria-label="Flujo de acceso">
+          <div class="flow-step">
+            <span class="flow-number">01</span>
+            <div class="flow-symbol" aria-hidden="true">⌘</div>
+            <h3>Dispositivo del propietario</h3>
+            <p>rclone se ejecuta localmente y recibe las instrucciones del propietario.</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step flow-step-featured">
+            <span class="flow-number">02</span>
+            <div class="flow-symbol" aria-hidden="true">↔</div>
+            <h3>Autorización OAuth</h3>
+            <p>Google autoriza el acceso de acuerdo con los permisos aceptados por el propietario.</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <span class="flow-number">03</span>
+            <div class="flow-symbol" aria-hidden="true">▤</div>
+            <h3>Google Drive</h3>
+            <p>rclone consulta o gestiona archivos según el alcance OAuth configurado y las órdenes dadas.</p>
+          </div>
+        </div>
+        <p class="flow-caption">Este sitio web es únicamente informativo: no solicita credenciales, no inicia sesiones y no se conecta a Google Drive.</p>
+      </div>
+    </section>
 
-  const tbody = document.getElementById("tabla-xml");
-  const listaJson = document.getElementById("lista-json");
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">03 / DATOS Y PERMISOS</p>
+        <h2>Qué datos se utilizan y para qué</h2>
+      </div>
+      <div class="data-grid">
+        <article class="data-card">
+          <span class="data-icon" aria-hidden="true">01</span>
+          <h3>Autorización</h3>
+          <p>rclone utiliza los tokens OAuth necesarios para obtener y renovar el acceso concedido por Google. Estos datos de autorización se guardan en la configuración local de rclone.</p>
+        </article>
+        <article class="data-card">
+          <span class="data-icon" aria-hidden="true">02</span>
+          <h3>Archivos y metadatos</h3>
+          <p>Según el permiso elegido, rclone puede consultar nombres, identificadores, carpetas y otros metadatos, así como leer o modificar el contenido de archivos.</p>
+        </article>
+        <article class="data-card">
+          <span class="data-icon" aria-hidden="true">03</span>
+          <h3>Operaciones solicitadas</h3>
+          <p>Los datos se utilizan para las operaciones que el propietario inicia, como listar, descargar, subir, copiar, sincronizar, mover o administrar archivos, siempre dentro de los permisos concedidos.</p>
+        </article>
+      </div>
+      <div class="scope-note">
+        <strong>Los permisos dependen del alcance OAuth seleccionado.</strong>
+        <p>Por ejemplo, el alcance <code>drive</code> permite acceso a los archivos de Drive (excepto la carpeta de datos de aplicaciones), mientras que <code>drive.readonly</code> limita el acceso a lectura. La autorización efectiva es la que se muestra en Google y está configurada en rclone.</p>
+      </div>
+    </section>
 
-  function filaXml(item, tipo) {
-    const fila = document.createElement("tr");
-    fila.className = tipo === "Ejemplo" ? "fila-ejemplo" : "fila-ejercicio";
-    fila.innerHTML = `
-      <td>${item.nombre}</td>
-      <td>${tipo}</td>
-      <td><a href="${item.xml}" target="_blank" rel="noopener">Ver XML</a></td>
-      <td><a href="${item.css}" target="_blank" rel="noopener">Ver CSS</a></td>
-    `;
-    return fila;
-  }
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <div>
+          <p class="eyebrow">04 / TRANSPARENCIA</p>
+          <h2>Una configuración local y privada.</h2>
+          <p>El propietario controla cuándo se ejecuta rclone, qué operaciones solicita y qué permisos concede. No hay un servidor propio que recopile o procese los archivos de Google Drive.</p>
+        </div>
+        <a class="button button-light" href="privacy.html">Consultar todos los detalles de privacidad <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
 
-  function itemJson(item, tipo) {
-    const li = document.createElement("li");
-    li.className = tipo === "Ejemplo" ? "item-ejemplo" : "item-ejercicio";
-    li.innerHTML = `<span>${item.nombre}</span><a href="${item.json}" target="_blank" rel="noopener">Ver JSON</a>`;
-    return li;
-  }
-
-  ejemplos.forEach(ej => {
-    tbody.appendChild(filaXml(ej, "Ejemplo"));
-    listaJson.appendChild(itemJson(ej, "Ejemplo"));
-    ej.ejercicios.forEach(ex => {
-      tbody.appendChild(filaXml(ex, "Ejercicio"));
-      listaJson.appendChild(itemJson(ex, "Ejercicio"));
-    });
-  });
-</script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="footer-brand" href="index.html">rclone<span>.</span></a>
+        <p>Configuración OAuth personal para Google Drive.</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Política de privacidad</a>
+        <a href="https://rclone.org/" target="_blank" rel="noopener noreferrer">Proyecto rclone ↗</a>
+      </div>
+      <p class="footer-fine">Esta configuración personal no está afiliada a Google ni representa al equipo del proyecto rclone.</p>
+    </div>
+  </footer>
 </body>
 </html>
